@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Showcase with Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .laptop-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .laptop-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .laptop-card h2 {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+            color: #2c3e50;
+        }
+        .laptop-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .price {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .image-carousel {
+            position: relative;
+            max-width: 100%;
+        }
+        .image-carousel img {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+        .image-carousel img.active {
+            display: block;
+        }
+        .image-carousel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .image-carousel .prev {
+            left: 10px;
+        }
+        .image-carousel .next {
+            right: 10px;
+        }
+        .toggle-section {
+            margin-top: 10px;
+
+        }
+        .listing-link {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-top: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laptop Showcase</h1>
+    <div class="laptop-container">
+        <!-- HP EliteBook 840 G5 -->
+        <div class="laptop-card">
+            <h2>HP EliteBook 840 G5</h2>
+            <p><strong>Processor:</strong> Intel Core i5-8th Generation</p>
+            <p><strong>RAM:</strong> 16GB DDR4</p>
+            <p><strong>Storage:</strong> 512GB SSD</p>
+            <div class="toggle-section hidden">
+                <p class="price">Price: 35k</p>
+                <a href="https://jiji.com.et/bole/computers-and-laptops/new-laptop-hp-elitebook-840-g5-16gb-intel-core-i5-ssd-512gb-98GMjYI23QovZ4nom2jciRT.html?page=1&pos=5&cur_pos=5&ads_per_page=18&ads_count=11286&lid=Vpd7YBPkCQKohdZ3&indexPosition=4" class="listing-link" target="_blank">View Listing</a>
+            </div>
+            <div class="image-carousel">
+                <img src="https://pictures-ethiopia.jijistatic.com/4532768_MTA4MC0xMDg3LTYzNjc4OGVhMTY.webp" alt="HP EliteBook 840 G5">
+                <img src="https://pictures-ethiopia.jijistatic.com/4532770_MTA4MC0xMDU4LTI1Yzc2YjdkMTY.webp" alt="HP EliteBook 840 G5">
+            </div>
+        </div>
+
+        <!-- Lenovo ThinkPad T490s -->
+        <div class="laptop-card">
+            <h2>Lenovo ThinkPad T490s</h2>
+            <p><strong>Processor:</strong> Intel Core i5-8th Generation</p>
+            <p><strong>RAM:</strong> 16GB</p>
+            <p><strong>Storage:</strong> 512GB SSD</p>
+            <div class="toggle-section hidden">
+                <p class="price">Price: 36k</p>
+                <a href="https://jiji.com.et/kirkos/computers-and-laptops/new-laptop-lenovo-thinkpad-t490s-16gb-intel-core-i5-ssd-512gb-tNvdkP1loVrFGWjknot5aU4B.html?page=1&pos=1&cur_pos=1&ads_per_page=16&ads_count=3571&lid=HkKGTQLFVBg3FJIk&indexPosition=0" class="listing-link" target="_blank">View Listing</a>
+            </div>
+            <div class="image-carousel">
+                <img src="https://pictures-ethiopia.jijistatic.com/7594511_MzAwLTQwMC0zY2JhZWVkYmRi.webp" alt="Lenovo ThinkPad T490s">
+                <img src="https://pictures-ethiopia.jijistatic.com/7604573_MTIwMC0xNjAwLWY4OTBmZWY1NDg.webp" alt="Lenovo ThinkPad T490s">
+            </div>
+        </div>
+
+        <!-- HP Envy x360 -->
+        <div class="laptop-card">
+            <h2>HP Envy x360</h2>
+            <p><strong>Processor:</strong> Intel Core i7-8th Generation</p>
+            <p><strong>RAM:</strong> 16GB DDR4</p>
+            <p><strong>Storage:</strong> 512GB SSD</p>
+            <p><strong>GPU:</strong> Intel UHD Graphics 620</p>
+            <div class="toggle-section hidden">
+                <p class="price">Price: 52k</p>
+                <a href="https://jiji.com.et/bole/computers-and-laptops/new-laptop-hp-envy-x360-16gb-intel-core-i7-ssd-512gb-rXKCLZrSGfmgc3MAm031ot6b.html?page=1&pos=6&cur_pos=6&ads_per_page=18&ads_count=63029&lid=rGkPydW3CAk4UHnK&indexPosition=5" class="listing-link" target="_blank">View Listing</a>
+            </div>
+            <div class="image-carousel">
+                <img src="https://pictures-ethiopia.jijistatic.com/2998303_MzAwLTI2Ni01MTgzNzQ2MDAwLTE.webp" alt="HP Envy x360">
+                <img src="https://pictures-ethiopia.jijistatic.com/2998304_MzAwLTI1OC04NWI5YmZmZDU1LTE.webp" alt="HP Envy x360">
+            </div>
+        </div>
+
+        <!-- Lenovo ThinkPad X1 Carbon -->
+        <div class="laptop-card">
+            <h2>Lenovo ThinkPad X1 Carbon</h2>
+            <p><strong>Processor:</strong> Intel Core i7-8650U (8th Generation)</p>
+            <p><strong>RAM:</strong> 16GB DDR4</p>
+            <p><strong>Storage:</strong> 512GB SSD</p>
+            <div class="toggle-section hidden">
+                <p class="price">Price: 52k</p>
+                <a href="https://jiji.com.et/bole/computers-and-laptops/new-laptop-lenovo-thinkpad-x1-carbon-16gb-intel-core-i7-ssd-512gb-5IEgUCgd64wciyeacX5ew08W.html?page=2&pos=2&cur_pos=2&ads_per_page=20&ads_count=18564&lid=RjU6P_PPSZL_kSHY&indexPosition=19" class="listing-link" target="_blank">View Listing</a>
+            </div>
+            <div class="image-carousel">
+                <img src="https://pictures-ethiopia.jijistatic.com/7680760_MzAwLTMxMC1kNjIwY2IzY2U4.webp" alt="Lenovo ThinkPad X1 Carbon">
+                <img src="https://pictures-ethiopia.jijistatic.com/7680756_MzAwLTMxMy05M2U5ZTBmMTRh.webp" alt="Lenovo ThinkPad X1 Carbon">
+            </div>
+        </div>
+
+        <!-- Lenovo ThinkPad Yoga -->
+        <div class="laptop-card">
+            <h2>Lenovo ThinkPad Yoga</h2>
+            <p><strong>Processor:</strong> Intel Core i5-8th Generation</p>
+            <p><strong>RAM:</strong> 16GB DDR4</p>
+            <p><strong>Storage:</strong> 512GB SSD</p>
+            <div class="toggle-section hidden">
+                <p class="price">Price: 41k</p>
+                <a href="https://jiji.com.et/yeka/computers-and-laptops/new-laptop-lenovo-thinkpad-yoga-16gb-intel-core-i5-ssd-512gb-kcAcAMxzpZr8OPzQU7hEC4kE.html?page=1&pos=10&cur_pos=10&ads_per_page=18&ads_count=18564&lid=RjU6P_PPSZL_kSHY&indexPosition=9" class="listing-link" target="_blank">View Listing</a>
+            </div>
+            <div class="image-carousel">
+                <img src="https://pictures-ethiopia.jijistatic.com/7241722_MTYwMC0xMTA2LTYwNjJhZDhkOTM.webp" alt="Lenovo ThinkPad Yoga">
+            </div>
+        </div>
+    </div>
+    <button id="toggle-button">1</button>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Carousel functionality
+        document.querySelectorAll('.image-carousel').forEach(carousel => {
+            const images = carousel.querySelectorAll('img');
+            if (images.length >= 2) {
+                const prevButton = document.createElement('button');
+                prevButton.textContent = '❮';
+                prevButton.className = 'prev';
+                const nextButton = document.createElement('button');
+                nextButton.textContent = '❯';
+                nextButton.className = 'next';
+                carousel.appendChild(prevButton);
+                carousel.appendChild(nextButton);
+
+                images[0].classList.add('active');
+
+                let currentIndex = 0;
+                prevButton.addEventListener('click', () => {
+                    images[currentIndex].classList.remove('active');
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    images[currentIndex].classList.add('active');
+                });
+                nextButton.addEventListener('click', () => {
+                    images[currentIndex].classList.remove('active');
+                    currentIndex = (currentIndex + 1) % images.length;
+                    images[currentIndex].classList.add('active');
+                });
+            } else if (images.length === 1) {
+                images[0].classList.add('active');
+            }
+        });
+
+        // Toggle functionality for price and listing link
+        const toggleButton = document.getElementById('toggle-button');
+        const toggleSections = document.querySelectorAll('.toggle-section');
+        toggleButton.addEventListener('click', () => {
+            const isHidden = toggleSections[0].classList.contains('hidden');
+            if (isHidden) {
+                toggleSections.forEach(section => section.classList.remove('hidden'));
+                toggleButton.textContent = '0';
+            } else {
+                toggleSections.forEach(section => section.classList.add('hidden'));
+                toggleButton.textContent = '1';
+            }
+        });
+    });
+    </script>
+</body>
+</html>
